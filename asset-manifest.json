@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gold-silver/static/css/main.d1b05096.chunk.css",
+    "main.js": "/gold-silver/static/js/main.ada347c9.chunk.js",
+    "main.js.map": "/gold-silver/static/js/main.ada347c9.chunk.js.map",
+    "runtime-main.js": "/gold-silver/static/js/runtime-main.b4dea8a4.js",
+    "runtime-main.js.map": "/gold-silver/static/js/runtime-main.b4dea8a4.js.map",
+    "static/js/2.e5dbc529.chunk.js": "/gold-silver/static/js/2.e5dbc529.chunk.js",
+    "static/js/2.e5dbc529.chunk.js.map": "/gold-silver/static/js/2.e5dbc529.chunk.js.map",
+    "index.html": "/gold-silver/index.html",
+    "precache-manifest.cac7443a0796c137048193ff7c84fd94.js": "/gold-silver/precache-manifest.cac7443a0796c137048193ff7c84fd94.js",
+    "service-worker.js": "/gold-silver/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/gold-silver/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.e5dbc529.chunk.js.LICENSE": "/gold-silver/static/js/2.e5dbc529.chunk.js.LICENSE",
+    "static/media/logo.svg": "/gold-silver/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4dea8a4.js",
+    "static/js/2.e5dbc529.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.ada347c9.chunk.js"
+  ]
+}
