@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "316f3404c00f1abc06b907345adf4cfc",
+    "revision": "91a2980141cb3fe2eadef45a07f15d86",
     "url": "/gold-silver/index.html"
   },
   {
-    "revision": "bfee0310b126c4c4198f",
-    "url": "/gold-silver/static/css/main.ec6aab3a.chunk.css"
+    "revision": "78998336fb0673b09dc2",
+    "url": "/gold-silver/static/css/main.73770316.chunk.css"
   },
   {
     "revision": "1989a31dc2211f93e308",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gold-silver/static/js/2.6a09afbd.chunk.js.LICENSE"
   },
   {
-    "revision": "bfee0310b126c4c4198f",
-    "url": "/gold-silver/static/js/main.bcf9e6b3.chunk.js"
+    "revision": "78998336fb0673b09dc2",
+    "url": "/gold-silver/static/js/main.4fb96d79.chunk.js"
   },
   {
     "revision": "d55fae5df57862f429e1",
