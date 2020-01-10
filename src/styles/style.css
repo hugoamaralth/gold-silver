@@ -1,6 +1,6 @@
 @import url("slick.css");
 @import url("slick-theme.css");
-@import url('https://fonts.googleapis.com/css?family=Lobster|Lato|Quicksand|Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand|Baloo+Bhai&display=swap');
 
 * {
     margin: 0px;
@@ -38,7 +38,6 @@ h3::after{
     align-items: center;
     background-color: #000;
     color:#EEE;
-    font-family: 'Lobster', cursive;
     position: fixed;
     width: calc(100% - 20px);
     z-index: 2;
@@ -96,25 +95,6 @@ h3::after{
     right: 0;
 }
 
-/* .header-site-mobile .top-mobile .buttons {
-    display: flex;
-    justify-content: space-between;
-}
-.header-site-mobile .top-mobile .buttons > button {
-    background: none;
-    border: none;
-    color: #c60707;
-    transition: 0.4s;
-    font-size: 27px;
-    margin: 4px 10px 0 0;
-}
-.header-site-mobile .top-mobile.change .buttons > button {
-    color: #FFF;
-}
-.header-site-mobile .top-mobile .buttons .button-cart {
-    margin-top: 3px;
-} */
-
 .footer-mobile {
     position: fixed;
     bottom: 0px;
@@ -124,6 +104,16 @@ h3::after{
     z-index: 4;
     display: flex;
     justify-content: space-evenly;
+}
+
+.footer-mobile .btFoot {
+    position: relative;
+}
+
+.footer-mobile .btFoot span {
+    font-size: 40px;
+    background: #bf0a0a;
+    right: -5px;
 }
 
 .footer-mobile button {
@@ -175,12 +165,53 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 .menu .content {
     height: 100%;
-    background: #bf0a0a;
-    width: 80%;
+    background: #000;
+    width: 90%;
     position: relative;
     left:0;
-    padding: 15px 5%;
+    padding: 15px 0;
     transition: 0.4s .2s;
+}
+
+.menu .content .logo {
+    width: 70%;
+    margin: 0 15% 20px;
+}
+
+.menu .content ul {
+    margin-top: 20px;
+}
+
+.menu .content ul li {
+    color: #FFF;
+    padding: 20px 30px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #202020;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    color: #ccc;
+}
+
+.menu .content ul li:first-child {
+    border-top: none;
+}
+
+.menu .content ul li:last-child {
+    border-bottom: none;
+}
+
+.menu .content ul li span {
+    font-size: 45px;
+    top: auto !important;
+    right: auto !important;
+    margin-left: -45px;
+    background-color: #bf0a0a;
+}
+
+.menu .content ul li svg {
+    margin-right: 15px;
+    color:#ffd700
 }
 
 .menu.closed {
@@ -190,123 +221,69 @@ transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .menu.closed .content {
-    width: 0px;
-    left: -50px;
+    left: -500px;
     transition: 0.4s 0s;
 }
 
 .menu .search-box {
-    width: 100%;
+    width: 90%;
+    margin:0 5%
 }
 
 .home-page {
-    margin-top:55px;
-}
-.home-page .bannerTop {
-    width:100%;
-    height: 300px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(238,56,56,1) 0%, rgba(206,21,0,0.92) 90.1% );
-    font-family: 'Baloo Bhai', cursive;
-    line-height: 300px;
-    text-align: center;
-    font-size: 40px;
-    color: #FFF;
+    margin-top:56px;
 }
 
-.home-page .b2 {
-    background-image: linear-gradient( 359.3deg,  rgba(196,214,252,1) 1%, rgba(187,187,187,0) 70.9% );
-    color:#111
-}
 
-.home-page .b3 {
-    background-image: radial-gradient( circle farthest-corner at 10.6% 22.1%,  rgba(206,18,18,1) 0%, rgba(122,21,21,1) 100.7% );
-}
-
-.home-page .b4 {
-    background-image: radial-gradient( circle 328px at 2.9% 15%,  rgba(191,224,251,1) 0%, rgba(232,233,251,1) 25.8%, rgba(252,239,250,1) 50.8%, rgba(234,251,251,1) 77.6%, rgba(240,251,244,1) 100.7% );
-    color:#111
-}
-
-.section {
-    padding:0 3px;
-}
-
-.section.text01 {
-    text-align: center;
-    padding: 25px 5px;
-}
-
-.section.text01 h1 {
-    color: #3E0470
-}
-
-.section.text01 p {
-    padding: 10px;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
-    color:#666;
-    text-align: left;
-}
-
-.section.categoria01 {
-    background: #F6F6F6;
-}
-
-.section.categoria01 > h3 {
+.news > h3 {
     padding: 10px 5px;
     color: #c60707
 }
-.categoria01 .item-slider-2-home {
-    background: #E72222;
-    border: 1px solid #c60707;
+.news .item {
+    background: #FFF;
+    border: 1px solid #F0F0F0;
     border-radius: 2px;
-    margin: 0 1px;
+    margin: 0 5px 10px;
+    height: auto;
+    box-shadow: 1px 1px 6px #ccc;
 }
 
-.categoria01 .item-slider-2-home h5 {
+.news .item h4 {
     margin: 5px 8px;
-    color: #620CAC;
-}
-
-
-.categoria01 .item-slider-2-home img {
-    width: 90%;
-    margin: 10px auto;
-}
-
-.categoria01 .item-slider-2-home .product-description {
-    width: 90%;
-    margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-}
-
-.categoria01 .item-slider-2-home .product-description .price {
-    display: block;
-    padding: 7px 10px;
-    width: 90%;
-    text-align: right;
-    color: #620CAC;
+    color: #c60707;
     font-weight: bold;
 }
 
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.news .item h4 span {
+    display: block;
+    font-size: 12px;
 }
 
-.parallax1 {
-    /* background-image: url("../assets/images/fundo1.jpg"); */
+.news .item img {
+    width: 100%;
+    margin: 0px auto;
 }
 
-.parallax1 h1 {
-    text-align: center;
-    color: #FFF;
-    padding: 50px 30px;
-    font-weight: normal;
+.news .item .product-description {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
+
+.news .item .product-description .price {
+    color: #303030;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    padding: 15px 3px;
+}
+
+.news .item .product-description .price span span {
+    font-size: 18px;
+}
+
 
 .payment {
     /* background: linear-gradient(70deg, #101010, #151515); */
@@ -327,6 +304,7 @@ transform: rotate(45deg) translate(-8px, -8px);
     color:#E0E0E0;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    margin: 10px 0 52px;
 }
 
 .footer-site ul {
@@ -340,4 +318,124 @@ transform: rotate(45deg) translate(-8px, -8px);
 .footer-site div {
     padding: 20px 20px 0;
     border-top: 1px solid #202020;
+}
+
+
+.banner-top-home-1 {
+    background-color: #bf0a0a;
+    background-image:  url('../assets/images/banner-1-mobile.png');
+    background-position:  center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-top-home-1 h4 {
+    color: #000;
+    font-family: 'Baloo Bhai', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 0px;
+    margin-top: 25px;
+}
+
+.banner-top-home-1 h4:first-child {
+    margin-top: 40px;
+}
+
+.banner-top-home-1 button {
+    margin: 90px 0 0 130px;
+    background-color: #ffd700;
+    border:none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px #850808;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.banner-top-home-2 {
+    background-color: #bf0a0a;
+    background-image:  url('../assets/images/banner-2-mobile.png');
+    background-position:  center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-top-home-2 h4 {
+    color: #fff;
+    font-family: 'Baloo Bhai', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 0px;
+}
+
+.banner-top-home-2 h4:first-child {
+    margin-top: 40px;
+}
+
+.banner-top-home-2 button {
+    margin: 130px 0 0;
+    background-color: #ffd700;
+    border:none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px #000;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+
+.home-page .slider {
+    height: 250px;
+}
+
+.home-page .slider .previousButton * , .home-page .slider .nextButton * {
+    color:#ffd700;
+    fill:#ffd700;
+}
+
+.home-page .slider .previousButton.disabled *, .home-page .slider .nextButton.disabled * {
+    opacity: .7;
+}
+
+.home-page .slider .slide * {
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.home-page .slider .slide.animateIn.previous * , 
+.home-page .slider .slide.animateIn.next *, 
+.home-page .slider .slide.animateOut.previous *, 
+.home-page .slider .slide.animateOut.next * {
+    opacity: 0;
+}
+
+.home-page .slider .slide.animateIn.previous h4,
+.home-page .slider .slide.animateIn.next h4,
+.home-page .slider .slide.animateOut.previous h4,
+.home-page .slider .slide.animateOut.next h4 {
+    margin-top: 0px;
+}
+
+.home-page .slider .slide.animateIn.previous.banner-top-home-2 button, 
+.home-page .slider .slide.animateIn.next.banner-top-home-2 button,
+.home-page .slider .slide.animateOut.previous.banner-top-home-2 button, 
+.home-page .slider .slide.animateOut.next.banner-top-home-2 button {
+    margin-top: 220px;
+}
+
+.home-page .slider .slide.animateIn.previous.banner-top-home-1 button, 
+.home-page .slider .slide.animateIn.next.banner-top-home-1 button,
+.home-page .slider .slide.animateOut.previous.banner-top-home-1 button, 
+.home-page .slider .slide.animateOut.next.banner-top-home-1 button {
+    margin-top: 180px;
 }
