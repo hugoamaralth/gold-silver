@@ -1,25 +1,28 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBuilding, faEnvelope, faStore, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 
 export default () => (
     <footer className="footer-site">
         <nav>
             <ul>
                 <li>
-                    Home
+                    <FontAwesomeIcon icon={faStore} /> Vitrine
                 </li>
                 <li>
-                    Sobre nós
+                    <FontAwesomeIcon icon={faBuilding} /> Sobre nós
                 </li>
                 <li>
-                    Como pagar
+                <FontAwesomeIcon icon={faDollarSign} /> Como pagar
                 </li>
                 <li>
-                    Contato
+                    <FontAwesomeIcon icon={faEnvelope} /> Contato
                 </li>
             </ul>
         </nav>
         <div>
-            Loja blablabla 2019 &copy; - Todos os direitos reservados.
+            Elétrica Gold & Silver 2020 &copy;<br />
+            Todos os direitos reservados.
         </div>
     </footer>
 );
