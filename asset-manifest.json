@@ -1,34 +1,31 @@
 {
   "files": {
-    "main.css": "/gold-silver/static/css/main.fc5a9b50.chunk.css",
-    "main.js": "/gold-silver/static/js/main.b5afeded.chunk.js",
-    "main.js.map": "/gold-silver/static/js/main.b5afeded.chunk.js.map",
+    "main.css": "/gold-silver/static/css/main.ae0d9d8a.chunk.css",
+    "main.js": "/gold-silver/static/js/main.cadcc323.chunk.js",
+    "main.js.map": "/gold-silver/static/js/main.cadcc323.chunk.js.map",
     "runtime-main.js": "/gold-silver/static/js/runtime-main.b4dea8a4.js",
     "runtime-main.js.map": "/gold-silver/static/js/runtime-main.b4dea8a4.js.map",
     "static/css/2.d4c5f937.chunk.css": "/gold-silver/static/css/2.d4c5f937.chunk.css",
-    "static/js/2.be74ed4e.chunk.js": "/gold-silver/static/js/2.be74ed4e.chunk.js",
-    "static/js/2.be74ed4e.chunk.js.map": "/gold-silver/static/js/2.be74ed4e.chunk.js.map",
+    "static/js/2.08ccad2b.chunk.js": "/gold-silver/static/js/2.08ccad2b.chunk.js",
+    "static/js/2.08ccad2b.chunk.js.map": "/gold-silver/static/js/2.08ccad2b.chunk.js.map",
     "index.html": "/gold-silver/index.html",
-    "precache-manifest.494d00b976613edb145d957a09d7d0e2.js": "/gold-silver/precache-manifest.494d00b976613edb145d957a09d7d0e2.js",
+    "precache-manifest.805d9e3a41f8d6c1384ed18b2f5750bb.js": "/gold-silver/precache-manifest.805d9e3a41f8d6c1384ed18b2f5750bb.js",
     "service-worker.js": "/gold-silver/service-worker.js",
     "static/css/2.d4c5f937.chunk.css.map": "/gold-silver/static/css/2.d4c5f937.chunk.css.map",
-    "static/css/main.fc5a9b50.chunk.css.map": "/gold-silver/static/css/main.fc5a9b50.chunk.css.map",
-    "static/js/2.be74ed4e.chunk.js.LICENSE": "/gold-silver/static/js/2.be74ed4e.chunk.js.LICENSE",
-    "static/media/style.css": "/gold-silver/static/media/banner-2-mobile.8e0cf089.png",
+    "static/css/main.ae0d9d8a.chunk.css.map": "/gold-silver/static/css/main.ae0d9d8a.chunk.css.map",
+    "static/js/2.08ccad2b.chunk.js.LICENSE": "/gold-silver/static/js/2.08ccad2b.chunk.js.LICENSE",
+    "static/media/homepage.css": "/gold-silver/static/media/banner-2-mobile.8e0cf089.png",
     "static/media/cat01.jpg": "/gold-silver/static/media/cat01.0220e8cb.jpg",
     "static/media/cat02.jpg": "/gold-silver/static/media/cat02.4e13a141.jpg",
     "static/media/cat03.jpg": "/gold-silver/static/media/cat03.0ab2cf55.jpg",
     "static/media/cat04.jpg": "/gold-silver/static/media/cat04.d4becc51.jpg",
-    "static/media/logo.png": "/gold-silver/static/media/logo.23196989.png",
-    "static/media/product01.jpg": "/gold-silver/static/media/product01.c45fdd0a.jpg",
-    "static/media/product02.jpg": "/gold-silver/static/media/product02.4f27b7b0.jpg",
-    "static/media/product03.jpg": "/gold-silver/static/media/product03.d6bd105b.jpg"
+    "static/media/logo.png": "/gold-silver/static/media/logo.23196989.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b4dea8a4.js",
     "static/css/2.d4c5f937.chunk.css",
-    "static/js/2.be74ed4e.chunk.js",
-    "static/css/main.fc5a9b50.chunk.css",
-    "static/js/main.b5afeded.chunk.js"
+    "static/js/2.08ccad2b.chunk.js",
+    "static/css/main.ae0d9d8a.chunk.css",
+    "static/js/main.cadcc323.chunk.js"
   ]
 }

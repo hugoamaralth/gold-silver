@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "87ee33cdac1bddeca9a8de3052b07f7e",
+    "revision": "45ef6af7da484f04a425c3a60412aa4a",
     "url": "/gold-silver/index.html"
   },
   {
-    "revision": "2942457d9cd54c4a9ccb",
+    "revision": "beddf8deadbbcd086100",
     "url": "/gold-silver/static/css/2.d4c5f937.chunk.css"
   },
   {
-    "revision": "04f37c45d64e18b86ad9",
-    "url": "/gold-silver/static/css/main.fc5a9b50.chunk.css"
+    "revision": "c3daed7e3c1eef9c513f",
+    "url": "/gold-silver/static/css/main.ae0d9d8a.chunk.css"
   },
   {
-    "revision": "2942457d9cd54c4a9ccb",
-    "url": "/gold-silver/static/js/2.be74ed4e.chunk.js"
+    "revision": "beddf8deadbbcd086100",
+    "url": "/gold-silver/static/js/2.08ccad2b.chunk.js"
   },
   {
     "revision": "f032203ca460334c00de541c30a6078a",
-    "url": "/gold-silver/static/js/2.be74ed4e.chunk.js.LICENSE"
+    "url": "/gold-silver/static/js/2.08ccad2b.chunk.js.LICENSE"
   },
   {
-    "revision": "04f37c45d64e18b86ad9",
-    "url": "/gold-silver/static/js/main.b5afeded.chunk.js"
+    "revision": "c3daed7e3c1eef9c513f",
+    "url": "/gold-silver/static/js/main.cadcc323.chunk.js"
   },
   {
     "revision": "d55fae5df57862f429e1",
@@ -54,17 +54,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "231969894b862ebf20609f1aefda3adb",
     "url": "/gold-silver/static/media/logo.23196989.png"
-  },
-  {
-    "revision": "c45fdd0a96dd741af2848a0a457d78b2",
-    "url": "/gold-silver/static/media/product01.c45fdd0a.jpg"
-  },
-  {
-    "revision": "4f27b7b0904fe3a22adfd6a78db68090",
-    "url": "/gold-silver/static/media/product02.4f27b7b0.jpg"
-  },
-  {
-    "revision": "d6bd105b1c35cba26b7068b7cf612a71",
-    "url": "/gold-silver/static/media/product03.d6bd105b.jpg"
   }
 ]);
