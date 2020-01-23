@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+import '../styles/category-banner.css';
+
 export default (props) => (
     <div className="category-banner">
         <img src={props.image} />

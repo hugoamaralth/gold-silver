@@ -1,6 +1,8 @@
 import React from 'react';
 import { faShoppingBasket, faUserCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+import '../styles/footer-mobile.css';
+
 import IconButton from '../components/icon-button';
 import ButtonMenuMobile from '../components/button-menu-mobile';
 

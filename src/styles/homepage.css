@@ -1,0 +1,330 @@
+.home-page {
+    margin-top:56px;
+}
+
+.banner-top-home-1 {
+    background-color: #bf0a0a;
+    background-image:  url('../assets/images/banner-1-mobile.png');
+    background-position:  center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-top-home-1 h4 {
+    color: #000;
+    font-family: 'Baloo Bhai', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 0px;
+    margin-top: 25px;
+}
+
+.banner-top-home-1 h4:first-child {
+    margin-top: 40px;
+}
+
+.banner-top-home-1 button {
+    margin: 90px 0 0 130px;
+    background-color: #ffd700;
+    border:none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px #850808;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.banner-top-home-2 {
+    background-color: #bf0a0a;
+    background-image:  url('../assets/images/banner-2-mobile.png');
+    background-position:  center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-top-home-2 h4 {
+    color: #fff;
+    font-family: 'Baloo Bhai', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 0px;
+}
+
+.banner-top-home-2 h4:first-child {
+    margin-top: 40px;
+}
+
+.banner-top-home-2 button {
+    margin: 130px 0 0;
+    background-color: #ffd700;
+    border:none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px #000;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+
+.home-page .slider {
+    height: 250px;
+    transition: all .2s;
+}
+
+.home-page .slider .previousButton * , .home-page .slider .nextButton * {
+    color:#ffd700;
+    fill:#ffd700;
+}
+
+.home-page .slider .previousButton.disabled *, .home-page .slider .nextButton.disabled * {
+    opacity: .7;
+}
+
+.home-page .slider .slide * {
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.home-page .slider .slide.animateIn.previous * , 
+.home-page .slider .slide.animateIn.next *, 
+.home-page .slider .slide.animateOut.previous *, 
+.home-page .slider .slide.animateOut.next * {
+    opacity: 0;
+}
+
+.home-page .slider .slide.animateIn.previous h4,
+.home-page .slider .slide.animateIn.next h4,
+.home-page .slider .slide.animateOut.previous h4,
+.home-page .slider .slide.animateOut.next h4 {
+    margin-top: 0px;
+}
+
+.home-page .slider .slide.animateIn.previous.banner-top-home-2 button, 
+.home-page .slider .slide.animateIn.next.banner-top-home-2 button,
+.home-page .slider .slide.animateOut.previous.banner-top-home-2 button, 
+.home-page .slider .slide.animateOut.next.banner-top-home-2 button {
+    margin-top: 220px;
+}
+
+.home-page .slider .slide.animateIn.previous.banner-top-home-1 button, 
+.home-page .slider .slide.animateIn.next.banner-top-home-1 button,
+.home-page .slider .slide.animateOut.previous.banner-top-home-1 button, 
+.home-page .slider .slide.animateOut.next.banner-top-home-1 button {
+    margin-top: 180px;
+}
+
+.news , .categories {
+    max-width: 1500px;
+    margin: auto
+}
+
+.news > h3 {
+    padding: 20px 15px;
+    font-size: 25px;
+    color: #c60707;
+}
+.news .item {
+    background: #FFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 2px;
+    margin: 0 5px 10px;
+    height: auto;
+    box-shadow: 1px 1px 6px #ccc;
+}
+
+.news .item h4 {
+    margin: 5px 8px;
+    color: #c60707;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.news .item h4 span {
+    display: block;
+    font-size: 12px;
+}
+
+.news .item img {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.news .item .product-description {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.news .item .product-description .price {
+    color: #303030;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    padding: 15px 3px;
+}
+
+.news .item .product-description .price span span {
+    font-size: 18px;
+}
+
+
+@media (min-width: 800px) {    
+    .home-page .slider {
+        height: 400px;
+    }
+    
+    .banner-top-home-1 h4 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .banner-top-home-1 h4:first-child {
+        margin-top: 60px;
+    }
+
+    .banner-top-home-1 button {
+        margin: 140px 0 0 190px;
+        font-size: 16px;
+    }
+
+    .banner-top-home-2 h4 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .banner-top-home-2 h4:first-child {
+        margin-top: 80px;
+    }
+
+    .banner-top-home-2 button {
+        margin: 130px 0 0;
+        font-size: 16px;
+    }
+    .home-page .slider .slide.animateIn.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-1 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-1 button {
+        margin-top: 280px;
+    }
+
+    .home-page .slider .slide.animateIn.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-2 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-2 button {
+        margin-top: 320px;
+    }
+}
+
+@media (min-width: 1000px) { 
+    .home-page {
+        margin-top: 122px;
+    }
+
+    .home-page .slider {
+        height: 550px;
+    }
+    
+    .banner-top-home-1 h4 {
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    .banner-top-home-1 h4:first-child {
+        margin-top: 70px;
+    }
+
+    .banner-top-home-1 button {
+        margin: 205px 0 0 250px;
+        font-size: 22px;
+    }
+
+    .banner-top-home-2 h4 {
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    .banner-top-home-2 h4:first-child {
+        margin-top: 110px;
+    }
+
+    .banner-top-home-2 button {
+        margin: 130px 0 0;
+        font-size: 22px;
+    }
+    .home-page .slider .slide.animateIn.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-1 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-1 button {
+        margin-top: 380px;
+    }
+
+    .home-page .slider .slide.animateIn.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-2 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-2 button {
+        margin-top: 420px;
+    }
+
+    .home-page .categories {
+        display: flex;
+    }
+
+ }
+ 
+@media (min-width: 1200px) {    
+    .home-page .slider {
+        height: 700px;
+    }
+    
+    .banner-top-home-1 h4 {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner-top-home-1 h4:first-child {
+        margin-top: 110px;
+    }
+
+    .banner-top-home-1 button {
+        margin: 240px 0 0 280px;
+        font-size: 30px;
+    }
+
+    .banner-top-home-2 h4 {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner-top-home-2 h4:first-child {
+        margin-top: 220px;
+    }
+
+    .banner-top-home-2 button {
+        margin: 130px 0 0;
+        font-size: 30px;
+    }
+    .home-page .slider .slide.animateIn.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-1 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-1 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-1 button {
+        margin-top: 520px;
+    }
+
+    .home-page .slider .slide.animateIn.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateIn.next.banner-top-home-2 button,
+    .home-page .slider .slide.animateOut.previous.banner-top-home-2 button, 
+    .home-page .slider .slide.animateOut.next.banner-top-home-2 button {
+        margin-top: 420px;
+    }
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default (props) => (
+
+export default (props) => {
+    return (
     <div className={props.cls}>
         <img src={props.image} />
         <h4>
@@ -16,4 +18,4 @@ export default (props) => (
             </span>
         </div>
     </div>
-);
+);}

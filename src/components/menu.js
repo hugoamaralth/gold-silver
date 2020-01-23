@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faUserCircle, faEnvelope, faHome, faFilter, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import '../styles/menu.css';
 
 
 import SearchBox from '../components/search-box';

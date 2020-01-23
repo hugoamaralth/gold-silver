@@ -1,0 +1,35 @@
+
+.footer-mobile {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #000;
+    padding: 10px 0;
+    z-index: 4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-mobile .btFoot {
+    position: relative;
+}
+
+.footer-mobile .btFoot span {
+    font-size: 40px;
+    background: #bf0a0a;
+    right: -5px;
+}
+
+.footer-mobile button {
+    background: none;
+    border: none;
+    color: #ffd700;
+    transition: 0.4s;
+    font-size: 27px;
+}
+
+@media (min-width: 1000px) {
+    .footer-mobile {
+        display: none;
+    }
+ }

@@ -1,0 +1,27 @@
+.header-site-mobile .top-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: #000;
+    color:#EEE;
+    position: fixed;
+    width: calc(100% - 20px);
+    z-index: 2;
+    top:0;
+    transition: 0.4s;
+}
+
+.header-site-mobile .top-mobile.change {
+    background-color: #c60707
+}
+
+.header-site-mobile .logo {
+    width: 130px;
+}
+
+@media (min-width: 1000px) { 
+    .header-site-mobile .logo {
+        width: 200px;
+    }
+}
