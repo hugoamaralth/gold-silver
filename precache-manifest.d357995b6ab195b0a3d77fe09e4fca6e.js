@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45ef6af7da484f04a425c3a60412aa4a",
+    "revision": "42e653ead8f72df1384195181c200f5a",
     "url": "/gold-silver/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gold-silver/static/css/2.d4c5f937.chunk.css"
   },
   {
-    "revision": "c3daed7e3c1eef9c513f",
-    "url": "/gold-silver/static/css/main.ae0d9d8a.chunk.css"
+    "revision": "eb9ea52769c0bcfd76f1",
+    "url": "/gold-silver/static/css/main.97751d70.chunk.css"
   },
   {
     "revision": "beddf8deadbbcd086100",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gold-silver/static/js/2.08ccad2b.chunk.js.LICENSE"
   },
   {
-    "revision": "c3daed7e3c1eef9c513f",
-    "url": "/gold-silver/static/js/main.cadcc323.chunk.js"
+    "revision": "eb9ea52769c0bcfd76f1",
+    "url": "/gold-silver/static/js/main.0fba2860.chunk.js"
   },
   {
     "revision": "d55fae5df57862f429e1",
