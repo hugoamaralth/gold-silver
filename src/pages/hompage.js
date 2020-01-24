@@ -7,15 +7,15 @@ import '../styles/homepage.css';
 import ProductShowcase from '../components/product-showcase';
 import CategoryBanner from '../components/category-banner';
 
-import products from '../main/tempData';
+import { allProducts } from '../main/tempData';
 
 export default class HomePage extends React.Component {
     makeProducts(amount){
         let ret = [];
-        let productsNews = products(amount);
+        let productsNews = allProducts(amount);
         for(let prod in productsNews){
             let p = productsNews[prod];
-            ret.push(<ProductShowcase cls="item" image={p.image} sub={p.sub} name={p.name} description={p.description} price={p.price} key={prod} />);
+            ret.push(<ProductShowcase cls="item" image={p.image} marca={p.marca} name={p.name} description={p.description.substr(0, 180) + ((p.description.length > 180) ? '...' : '')} price={p.price} key={p.id} />);
         }
         return ret;
     }
@@ -36,12 +36,12 @@ export default class HomePage extends React.Component {
         const slidersConfig = {
             dots: false,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 4000,
             speed: 500,
-            slidesToShow: 4,
+            slidesToShow: 5,
             centerMode: true,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             arrows: true,
             responsive: [
                 {
@@ -62,6 +62,12 @@ export default class HomePage extends React.Component {
                     breakpoint: 1200,
                     settings: {
                       slidesToShow: 3,
+                    }
+                  },
+                  {
+                    breakpoint: 1525,
+                    settings: {
+                      slidesToShow: 4,
                     }
                   }
             ]
@@ -84,7 +90,7 @@ export default class HomePage extends React.Component {
                 <section className="news">
                     <h3>Novidades</h3>
                     <Slider {...slidersConfig}>
-                        {this.makeProducts(7)}
+                        {this.makeProducts(11)}
                     </Slider>
                 </section>
 
@@ -98,7 +104,7 @@ export default class HomePage extends React.Component {
                 <section className="news">
                     <h3>Mais Vendidos</h3>
                     <Slider {...slidersConfig}>
-                    {this.makeProducts(7)}
+                    {this.makeProducts(11)}
                     </Slider>
                 </section>
             </div>

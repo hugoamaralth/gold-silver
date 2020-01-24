@@ -8,14 +8,14 @@ export default (props) => {
         <h4>
             {props.name}
             <span>
-                {props.sub}
+                {props.marca}
             </span>
         </h4>
         <div className="product-description">
-            {props.description}
             <span className="price">
                 {props.price ? <span><span>R$</span> {props.price}</span> : <span><span>Consulte-nos</span></span>}
             </span>
+            {props.description}
         </div>
     </div>
 );}
