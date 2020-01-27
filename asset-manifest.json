@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/gold-silver/static/css/main.97751d70.chunk.css",
-    "main.js": "/gold-silver/static/js/main.0fba2860.chunk.js",
-    "main.js.map": "/gold-silver/static/js/main.0fba2860.chunk.js.map",
+    "main.css": "/gold-silver/static/css/main.582a0a14.chunk.css",
+    "main.js": "/gold-silver/static/js/main.bc7050d0.chunk.js",
+    "main.js.map": "/gold-silver/static/js/main.bc7050d0.chunk.js.map",
     "runtime-main.js": "/gold-silver/static/js/runtime-main.b4dea8a4.js",
     "runtime-main.js.map": "/gold-silver/static/js/runtime-main.b4dea8a4.js.map",
-    "static/css/2.d4c5f937.chunk.css": "/gold-silver/static/css/2.d4c5f937.chunk.css",
-    "static/js/2.08ccad2b.chunk.js": "/gold-silver/static/js/2.08ccad2b.chunk.js",
-    "static/js/2.08ccad2b.chunk.js.map": "/gold-silver/static/js/2.08ccad2b.chunk.js.map",
+    "static/css/2.620ec43d.chunk.css": "/gold-silver/static/css/2.620ec43d.chunk.css",
+    "static/js/2.a113ada6.chunk.js": "/gold-silver/static/js/2.a113ada6.chunk.js",
+    "static/js/2.a113ada6.chunk.js.map": "/gold-silver/static/js/2.a113ada6.chunk.js.map",
     "index.html": "/gold-silver/index.html",
-    "precache-manifest.d357995b6ab195b0a3d77fe09e4fca6e.js": "/gold-silver/precache-manifest.d357995b6ab195b0a3d77fe09e4fca6e.js",
+    "precache-manifest.ef052d7e5079d229629bd8d0ebd5ae02.js": "/gold-silver/precache-manifest.ef052d7e5079d229629bd8d0ebd5ae02.js",
     "service-worker.js": "/gold-silver/service-worker.js",
-    "static/css/2.d4c5f937.chunk.css.map": "/gold-silver/static/css/2.d4c5f937.chunk.css.map",
-    "static/css/main.97751d70.chunk.css.map": "/gold-silver/static/css/main.97751d70.chunk.css.map",
-    "static/js/2.08ccad2b.chunk.js.LICENSE": "/gold-silver/static/js/2.08ccad2b.chunk.js.LICENSE",
+    "static/css/2.620ec43d.chunk.css.map": "/gold-silver/static/css/2.620ec43d.chunk.css.map",
+    "static/css/main.582a0a14.chunk.css.map": "/gold-silver/static/css/main.582a0a14.chunk.css.map",
+    "static/js/2.a113ada6.chunk.js.LICENSE": "/gold-silver/static/js/2.a113ada6.chunk.js.LICENSE",
     "static/media/homepage.css": "/gold-silver/static/media/banner-2-mobile.8e0cf089.png",
     "static/media/cat01.jpg": "/gold-silver/static/media/cat01.0220e8cb.jpg",
     "static/media/cat02.jpg": "/gold-silver/static/media/cat02.4e13a141.jpg",
@@ -23,9 +23,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b4dea8a4.js",
-    "static/css/2.d4c5f937.chunk.css",
-    "static/js/2.08ccad2b.chunk.js",
-    "static/css/main.97751d70.chunk.css",
-    "static/js/main.0fba2860.chunk.js"
+    "static/css/2.620ec43d.chunk.css",
+    "static/js/2.a113ada6.chunk.js",
+    "static/css/main.582a0a14.chunk.css",
+    "static/js/main.bc7050d0.chunk.js"
   ]
 }
