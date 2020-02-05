@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import SearchBox from '../components/search-box';
 import Logo from '../components/logo';
@@ -9,7 +10,9 @@ export default () => (
     <header className="header-site-mobile">
         <div className='top-mobile'>
             <div>
-                <Logo />
+                <Link to='/'>
+                    <Logo />
+                </Link>
             </div>
             <SearchBox  />
         </div>

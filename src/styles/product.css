@@ -1,0 +1,36 @@
+.product-page {
+    padding: 5px 10px;
+}
+
+.product-page .product-description-page {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.product-page .product-description-page h1 {
+    color: #c60707;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.product-page .product-description-page h1 span {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.product-page .product-description-page button {
+    float: right;
+}
+
+.product-page .product-description-page p { 
+    clear: both;
+    margin-top: 70px;
+    color: #666;
+    padding: 0 5px;
+}
+
+.relatedProducts {
+    margin-top: 50px;
+}

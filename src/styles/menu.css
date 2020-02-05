@@ -2,7 +2,7 @@
 .menu {
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index:4;
     left:0;
     top: 0px;
     transition: 'background' 0.2s 0.2s;
@@ -97,7 +97,7 @@
 
     .menu {
         width: 100%;
-        z-index: 3;
+        z-index:4;
         left:0;
         top: 73px;
         height: auto;

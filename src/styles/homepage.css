@@ -1,6 +1,4 @@
-.home-page {
-    margin-top:56px;
-}
+
 
 .banner-top-home-1 {
     background-color: #bf0a0a;
@@ -132,55 +130,6 @@
     font-size: 25px;
     color: #c60707;
 }
-.news .item {
-    background: #FFF;
-    border: 1px solid #F0F0F0;
-    border-radius: 2px;
-    margin: 0 5px 10px;
-    height: 510px;
-    box-shadow: 1px 1px 6px #ccc;
-    position: relative;
-    max-width: 320px;
-}
-
-.news .item h4 {
-    margin: 5px 8px;
-    color: #c60707;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.news .item h4 span {
-    display: block;
-    font-size: 12px;
-    color:#000
-}
-
-.news .item img {
-    width: 100%;
-    margin: 0px auto;
-}
-
-.news .item .product-description {
-    width: 90%;
-    margin: 10px auto 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-}
-
-.news .item .product-description .price {
-    color: #ffd700;
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 1px 1px 3px #483e06;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.news .item .product-description .price span span {
-    font-size: 18px;
-}
 
 
 @media (min-width: 800px) {    
@@ -231,10 +180,6 @@
 }
 
 @media (min-width: 1000px) { 
-    .home-page {
-        margin-top: 122px;
-    }
-
     .home-page .slider {
         height: 550px;
     }

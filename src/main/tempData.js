@@ -6,7 +6,8 @@ const data = [
         name: "Cabo PP 500V",
         marca: "cobrecom",
         description: "Disponível em vários modelos",
-        price: "130,00"
+        price: "130,00",
+        othersImages: 1
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const data = [
         name: "CABOFLEX 750V -16,00mm2",
         marca: "cobrecom",
         description: "Disponível em várias cores",
-        price: "70,00"
+        price: "70,00",
+        othersImages: 1
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const data = [
         name: "CABOFLEX 750V – 10,00mm2",
         marca: "cobrecom",
         description: "Disponível em várias cores",
-        price: "170,00"
+        price: "170,00",
+        othersImages: 1
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const data = [
         name: "CABOFLEX 750V – 6,00mm",
         marca: "cobrecom",
         description: "Disponível em várias cores",
-        price: "50,00"
+        price: "50,00",
+        othersImages: 1
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ const data = [
         name: "CABOFLEX 750V – 4,00mm2",
         marca: "cobrecom",
         description: "Disponível em várias cores",
-        price: "80,00"
+        price: "80,00",
+        othersImages: 1
     },
     {
         id: 6,
@@ -85,7 +90,7 @@ const data = [
         image: "images/products/10.jpg",
         category: "conectores",
         name: "CONECTOR DE EMENDA 5 POLOS",
-        marca: "Wago2",
+        marca: "Wago",
         description: "Eles conectam e isolam diferentes tipos e dimensões de condutores, tem fácil manuseio, são livres de manutenção e permitem derivações de mesma fase, além de garantir: Economia de tempo, Redução de custos, Segurança e Versatilidade. oferecendo conexões para todos os tipos de fios e cabos.",
         price: "100,00"
     },
@@ -94,7 +99,7 @@ const data = [
         image: "images/products/11.jpg",
         category: "conectores",
         name: "CONECTOR DE EMENDA 2 POLOS 6MM",
-        marca: "Wago2",
+        marca: "Wago",
         description: "Eles conectam e isolam diferentes tipos e dimensões de condutores, tem fácil manuseio, são livres de manutenção e permitem derivações de mesma fase, além de garantir: Economia de tempo, Redução de custos, Segurança e Versatilidade. oferecendo conexões para todos os tipos de fios e cabos.",
         price: "90,00"
     }
@@ -115,7 +120,7 @@ export function allProducts (amount) {
 export function productById (id) {
     let ret;
     for(let p in data){
-        if(data[p].id === id){
+        if(data[p].id === parseInt(id)){
             ret = data[p];
         }
     }
