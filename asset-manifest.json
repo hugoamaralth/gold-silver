@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/gold-silver/static/css/main.582a0a14.chunk.css",
-    "main.js": "/gold-silver/static/js/main.bf5a1f3b.chunk.js",
-    "main.js.map": "/gold-silver/static/js/main.bf5a1f3b.chunk.js.map",
+    "main.css": "/gold-silver/static/css/main.9e0c3eaa.chunk.css",
+    "main.js": "/gold-silver/static/js/main.b3318776.chunk.js",
+    "main.js.map": "/gold-silver/static/js/main.b3318776.chunk.js.map",
     "runtime-main.js": "/gold-silver/static/js/runtime-main.b4dea8a4.js",
     "runtime-main.js.map": "/gold-silver/static/js/runtime-main.b4dea8a4.js.map",
     "static/css/2.620ec43d.chunk.css": "/gold-silver/static/css/2.620ec43d.chunk.css",
-    "static/js/2.3f8493cb.chunk.js": "/gold-silver/static/js/2.3f8493cb.chunk.js",
-    "static/js/2.3f8493cb.chunk.js.map": "/gold-silver/static/js/2.3f8493cb.chunk.js.map",
+    "static/js/2.f5ad923a.chunk.js": "/gold-silver/static/js/2.f5ad923a.chunk.js",
+    "static/js/2.f5ad923a.chunk.js.map": "/gold-silver/static/js/2.f5ad923a.chunk.js.map",
     "index.html": "/gold-silver/index.html",
-    "precache-manifest.a9d0473dddb48f6f308456c57767f638.js": "/gold-silver/precache-manifest.a9d0473dddb48f6f308456c57767f638.js",
+    "precache-manifest.45e05ad7aa45888f76b55a71c0051635.js": "/gold-silver/precache-manifest.45e05ad7aa45888f76b55a71c0051635.js",
     "service-worker.js": "/gold-silver/service-worker.js",
     "static/css/2.620ec43d.chunk.css.map": "/gold-silver/static/css/2.620ec43d.chunk.css.map",
-    "static/css/main.582a0a14.chunk.css.map": "/gold-silver/static/css/main.582a0a14.chunk.css.map",
-    "static/js/2.3f8493cb.chunk.js.LICENSE": "/gold-silver/static/js/2.3f8493cb.chunk.js.LICENSE",
+    "static/css/main.9e0c3eaa.chunk.css.map": "/gold-silver/static/css/main.9e0c3eaa.chunk.css.map",
+    "static/js/2.f5ad923a.chunk.js.LICENSE": "/gold-silver/static/js/2.f5ad923a.chunk.js.LICENSE",
     "static/media/homepage.css": "/gold-silver/static/media/banner-2-mobile.8e0cf089.png",
     "static/media/cat01.jpg": "/gold-silver/static/media/cat01.0220e8cb.jpg",
     "static/media/cat02.jpg": "/gold-silver/static/media/cat02.4e13a141.jpg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.b4dea8a4.js",
     "static/css/2.620ec43d.chunk.css",
-    "static/js/2.3f8493cb.chunk.js",
-    "static/css/main.582a0a14.chunk.css",
-    "static/js/main.bf5a1f3b.chunk.js"
+    "static/js/2.f5ad923a.chunk.js",
+    "static/css/main.9e0c3eaa.chunk.css",
+    "static/js/main.b3318776.chunk.js"
   ]
 }
