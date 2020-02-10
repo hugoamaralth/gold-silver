@@ -6,20 +6,20 @@ import '../styles/product-showcase.css';
 
 export default (props) => {
     return (
-    <Link to={`/produto/${props.id}`}>
+    <Link to={`/produto/${props.prod.id}`}>
         <div className="item-showcase">
-            <img src={props.image} />
+            <img src={props.prod.image} />
             <h4>
-                {props.name}
+                {props.prod.name}
                 <span>
-                    {props.marca}
+                    {props.prod.marca}
                 </span>
             </h4>
             <div className="product-description">
                 <p>
-                    {props.description}
+                    {props.prod.description.substr(0, 180) + ((props.prod.description.length > 180) ? '...' : '')}
                 </p>
-                <BtnCart price={props.price} />
+                <BtnCart prod={props.prod} handlerAddToBasket={props.handlerAddToBasket} />
             </div>
         </div>
     </Link>

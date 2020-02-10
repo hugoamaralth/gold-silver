@@ -1,5 +1,7 @@
 .product-page {
     padding: 5px 10px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .product-page .product-description-page {
@@ -33,4 +35,18 @@
 
 .relatedProducts {
     margin-top: 50px;
+}
+
+.relatedProducts h3 {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) { 
+    .content-product {
+        display: flex;
+        justify-content: space-between;
+    }   
+    .content-product > div {
+        width: 50%;
+    }
 }

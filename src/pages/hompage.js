@@ -15,7 +15,7 @@ export default class HomePage extends React.Component {
         let productsNews = allProducts(amount);
         for(let prod in productsNews){
             let p = productsNews[prod];
-            ret.push(<ProductShowcase image={p.image} marca={p.marca} name={p.name} description={p.description.substr(0, 180) + ((p.description.length > 180) ? '...' : '')} price={p.price} id={p.id} key={p.id} />);
+            ret.push(<ProductShowcase prod={p} key={p.id} handlerAddToBasket={this.handlerAddToBasket} />);
         }
         return ret;
     }

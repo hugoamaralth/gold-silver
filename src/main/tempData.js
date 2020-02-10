@@ -127,8 +127,9 @@ export function productById (id) {
     return ret;
 }
 
-export function productsByFilter(filter){    
+export function productsByFilter(filter, amount){    
     let ret = [];
+    let i = 0;
     for(let p in data){
         let prd = data[p];
         let include = true;
@@ -138,7 +139,11 @@ export function productsByFilter(filter){
             }
         }
         if(include){
-            ret.push(prd)
+            ret.push(prd);
+            i++;
+            if(i === amount){
+                break;
+            }
         }
     }
     return ret;

@@ -30,14 +30,14 @@ export default class Menu extends React.Component {
                             <FontAwesomeIcon icon={faShoppingBasket} /> 
                             Minha cesta
                             <span className="fa-layers-counter">
-                                3
+                                {this.props.basketAmount}
                             </span>
                         </li>
                         <li>
                             <FontAwesomeIcon icon={faEnvelope} /> 
                             Mensagens
                             <span className="fa-layers-counter">
-                                1
+                                0
                             </span>
                         </li>
                         <li>
