@@ -9,37 +9,37 @@ import ProductShowcase from '../components/product-showcase';
 import BtnCart from '../components/btn-add-to-cart';
 import '../styles/product.css';
 
-let done = false;
-const productPictures = [];
 
 export default function (props) {
+    const productPictures = [];
     let { id } = useParams();
     let prod = productById(id);
-    if (!done) {
-        if (prod.othersImages == undefined) {
-            productPictures.push({
-                original: `../${prod.image}`,
-                thumbnail: `../${prod.image}`
-            });
-        } else {
-            for (let i = 0; i <= prod.othersImages; i++) {
-                if (i === 0) {
-                    productPictures.push({
-                        original: `../${prod.image}`,
-                        thumbnail: `../${prod.image}`
-                    });
-                } else {
-                    let img = prod.image.split('.');
-                    img = img[0] + '_' + (i + 1) + '.' + img[1];
-                    productPictures.push({
-                        original: `../${img}`,
-                        thumbnail: `../${img}`
-                    })
-                }
+    
+    prod.image = prod.image.split("../").join("");
+
+    if (prod.othersImages == undefined) {
+        productPictures.push({
+            original: `../${prod.image}`,
+            thumbnail: `../${prod.image}`
+        });
+    } else {
+        for (let i = 0; i <= prod.othersImages; i++) {
+            if (i === 0) {
+                productPictures.push({
+                    original: `../${prod.image}`,
+                    thumbnail: `../${prod.image}`
+                });
+            } else {
+                let img = prod.image.split('.');
+                img = img[0] + '_' + (i + 1) + '.' + img[1];
+                productPictures.push({
+                    original: `../${img}`,
+                    thumbnail: `../${img}`
+                })
             }
         }
     }
-    done = true;
+
     const slidersConfig = {
         dots: false,
         infinite: true,

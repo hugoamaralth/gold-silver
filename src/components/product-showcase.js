@@ -19,7 +19,7 @@ export default (props) => {
                 <p>
                     {props.prod.description.substr(0, 180) + ((props.prod.description.length > 180) ? '...' : '')}
                 </p>
-                <BtnCart prod={props.prod} handlerAddToBasket={props.handlerAddToBasket} />
+                <button>Ver produto</button>
             </div>
         </div>
     </Link>

@@ -48,14 +48,14 @@ export default class HomePage extends React.Component {
                   breakpoint: 530,
                   settings: {
                     slidesToShow: 1,
-                    arrows: false
+                    arrows: true
                   }
                 },
                 {
                     breakpoint: 1000,
                     settings: {
                       slidesToShow: 2,
-                      arrows: false
+                      arrows: true
                     }
                   },
                   {
@@ -90,7 +90,7 @@ export default class HomePage extends React.Component {
                 <section className="news">
                     <h3>Novidades</h3>
                     <Slider {...slidersConfig}>
-                        {this.makeProducts(11)}
+                        {this.makeProducts(5)}
                     </Slider>
                 </section>
 
@@ -104,7 +104,7 @@ export default class HomePage extends React.Component {
                 <section className="news">
                     <h3>Mais Vendidos</h3>
                     <Slider {...slidersConfig}>
-                    {this.makeProducts(11)}
+                    {this.makeProducts(5)}
                     </Slider>
                 </section>
             </div>

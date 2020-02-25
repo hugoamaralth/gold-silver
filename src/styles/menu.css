@@ -11,6 +11,8 @@
     background: rgba(0,0,0,.8);
 }
 
+.menu a {color: #FFF;}
+
 .menu .content {
     height: 100%;
     background: #000;

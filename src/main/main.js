@@ -3,6 +3,7 @@ import { Route, Switch} from "react-router-dom";
 
 import HomePage from '../pages/hompage';
 import Product from '../pages/product';
+import Search from '../pages/search';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import FooterMobile from '../components/footer-mobile';
@@ -58,6 +59,7 @@ export default class Main extends React.Component {
                     <Switch>
                         <Route exact path='/' component={()=>(<HomePage handlerAddToBasket={this.addToBasket} />)} />
                         <Route path='/produto/:id' component={()=>(<Product handlerAddToBasket={this.addToBasket} />)} />
+                        <Route path='/buscar' component={()=>(<Search />)} />
                     </Switch>
                 </div>
 

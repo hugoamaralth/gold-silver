@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faUserCircle, faEnvelope, faHome, faFilter, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 import '../styles/menu.css';
 
 
@@ -8,11 +9,11 @@ import SearchBox from '../components/search-box';
 import Logo from '../components/logo';
 
 export default class Menu extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
-    render(){
-        return(
+    render() {
+        return (
             <div className={`menu ${this.props.opened ? '' : 'closed'}`}>
                 <div className="content">
                     <Logo />
@@ -23,29 +24,31 @@ export default class Menu extends React.Component {
                             Home
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faFilter} /> 
-                            Filtrar produtos
+                            <Link to='/buscar'>
+                                <FontAwesomeIcon icon={faFilter} />
+                                Filtrar produtos
+                            </Link>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faShoppingBasket} /> 
+                            <FontAwesomeIcon icon={faShoppingBasket} />
                             Minha cesta
                             <span className="fa-layers-counter">
                                 {this.props.basketAmount}
                             </span>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faEnvelope} /> 
+                            <FontAwesomeIcon icon={faEnvelope} />
                             Mensagens
                             <span className="fa-layers-counter">
                                 0
                             </span>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faUserCircle} /> 
+                            <FontAwesomeIcon icon={faUserCircle} />
                             Meu perfil
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faSignOutAlt} /> 
+                            <FontAwesomeIcon icon={faSignOutAlt} />
                             Sair
                         </li>
                     </ul>
