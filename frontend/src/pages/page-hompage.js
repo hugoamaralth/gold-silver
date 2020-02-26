@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import SliderAnimated from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import '../styles/homepage.css';
+import '../styles/page-homepage.css';
 import { productList } from '../main/server-requests';
 import ProductShowcase from '../components/product-showcase';
 import CategoryBanner from '../components/category-banner';

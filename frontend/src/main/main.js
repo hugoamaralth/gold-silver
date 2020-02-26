@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, Switch} from "react-router-dom";
 
-import HomePage from '../pages/hompage';
-import ProductPage from '../pages/product';
-import Search from '../pages/search';
+import HomePage from '../pages/page-hompage';
+import ProductPage from '../pages/page-product';
+import Search from '../pages/page-search';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 import FooterMobile from '../components/footer-mobile';

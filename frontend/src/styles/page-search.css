@@ -1,0 +1,63 @@
+.search-page .content {
+    display: flex;
+}
+
+.search-page .sideBar {
+    width: 250px;
+    background: #101010;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.search-page .sideBar .search-box {
+    margin: 20px 0;
+    width: auto;
+}
+
+.search-page .sideBar h4 {
+    color: #c60707
+}
+
+.search-page .sideBar .clear-filters {
+    width: 80%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 10px 3px;
+    border-radius: 5px;
+    color: #ffd700;
+    font-family: 'Quicksand', sans-serif;
+}
+.search-page .sideBar .clear-filters svg {
+    font-size: 20px;
+    background: #ffd700;
+    border-radius: 50%;
+    color: #000;
+    padding: 5px 7px;
+}
+
+.search-page .filter-by-price .price-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+.search-page .filter-by-price .price-inputs > div {
+    color:#666;
+    width: 49%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.search-page .filter-by-price .price-inputs input {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: #EEE;
+    padding: 10px 0;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+}

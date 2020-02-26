@@ -6,7 +6,7 @@ import { slidersConfig } from '../core/configSliders';
 import ProductShowcase from '../components/product-showcase';
 import { productById, productListFilter } from '../main/server-requests';
 import "react-image-gallery/styles/css/image-gallery.css";
-import '../styles/product.css';
+import '../styles/page-product.css';
 
 class ProductPage extends React.Component {
     state = {
