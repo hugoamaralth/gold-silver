@@ -15,9 +15,6 @@ export default (props) => {
                 </span>
             </h4>
             <div className="product-description">
-                <p>
-                    {props.prod.description.substr(0, 180) + ((props.prod.description.length > 180) ? '...' : '')}
-                </p>
                 <span className="price">
                     {props.prod.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
                 </span>

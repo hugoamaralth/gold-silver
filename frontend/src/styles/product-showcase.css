@@ -13,12 +13,15 @@
     margin: 5px 8px;
     color: #c60707;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .item-showcase h4 span {
     display: block;
-    font-size: 12px;
+    font-size: 17px;
+    margin-top: 5px;
     color:#000
 }
 
@@ -36,14 +39,11 @@
     color:#666
 }
 
-.item-showcase .product-description p {
-    text-align: left;
-}
 
 .item-showcase .product-description .price {
-    color: #c60707;
-    float: right;
+    color: #ffd700;
     margin-top: 10px;
+    background: black;
     font-size: 22px;
 }
 

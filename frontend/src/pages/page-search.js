@@ -2,7 +2,6 @@ import React from 'react';
 import BtnTextIcon from '../components/icon-text-button';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import '../styles/page-search.css';
-import SearchBox from '../components/search-box';
 import ListOfFilters from '../components/list-of-filters';
 import { productListFilter } from '../main/server-requests';
 import ProductShowcase from '../components/product-showcase';
@@ -28,20 +27,33 @@ export default class Search extends React.Component {
             }
         }
     };
-
     getDataTimeout = null;
-    getDataTimeoutMS = 3000;
+    getDataTimeoutMS = 2000;
 
     constructor(props) {
         super(props);
         this.clearFilters = this.clearFilters.bind(this);
         this.filterByBrand = this.filterByBrand.bind(this);
+    }
 
+    componentDidMount() {
         this.updateStates();
     }
 
-    clearFilters() {
-        //clear filters
+    async clearFilters() {
+        await this.setState({
+            ...this.setState,
+            selectedFilters: {
+                text: '',
+                brand: null,
+                categorie: null,
+                prices: {
+                    min: 0,
+                    max: 0
+                }
+            }
+        });
+        this.updateStates()
     }
 
     async filterByBrand(evt) {
@@ -86,6 +98,9 @@ export default class Search extends React.Component {
                 case "categorie": ret.category = (filter === null) ? null : filter;
                     break;
                 case "prices": ret.prices = { min: this.state.selectedFilters.prices.min, max: this.state.selectedFilters.prices.max };
+                    break;
+                case "text": ret.name = filter;
+                    break;
                 default:
                     break;
             }
@@ -95,10 +110,11 @@ export default class Search extends React.Component {
 
     async updateStates() {
         let filters = this.getAllFilters();
-        await this.setState({
+        
+        this.setState({
             ...this.state,
             isLoading: true
-        });
+        })
         productListFilter({
             dataSearch: true,
             filters
@@ -131,10 +147,11 @@ export default class Search extends React.Component {
                     prices: data.prices
                 }
             });
+
         })
     }
 
-    handleInputChange = (text, field) => {
+    handlerOnlyNumber = (text, field) => {
         clearTimeout(this.getDataTimeout);
         const num = parseInt(text.target.value);
         if (/^\d+$/.test(num)) {
@@ -154,6 +171,21 @@ export default class Search extends React.Component {
         }
     }
 
+    handlerChangeText(evt) {
+        clearTimeout(this.getDataTimeout);
+        const txt = evt.target.value;
+        this.setState({
+            ...this.state,
+            selectedFilters: {
+                ...this.state.selectedFilters,
+                text: txt
+            }
+        });
+        this.getDataTimeout = setTimeout(() => {
+            this.updateStates();
+        }, this.getDataTimeoutMS);
+    }
+
     render() {
         return (
             <div className="search-page">
@@ -163,31 +195,34 @@ export default class Search extends React.Component {
                 <div className="content">
                     <div className="sideBar">
                         <BtnTextIcon text="Limpar filtros" cls="clear-filters" icon={faTrash} onClick={this.clearFilters} />
-                        <SearchBox text={this.state.selectedFilters.text} />
+                        <input type="text" placeholder="pesquise pelo nome" className="search-text" value={this.state.selectedFilters.text} onChange={(evt) => {
+                            this.handlerChangeText(evt)
+                        }
+                        } />
                         <div className="filter-by-price">
                             <h4>Filtrar por preço</h4>
                             <div className="price-inputs">
                                 <div>
                                     <sup>mínimo R$</sup>
                                     <input type="text" placeholder={this.state.selectedFilters.prices.min} value={this.state.selectedFilters.prices.min} onChange={(evt) => {
-                                        this.handleInputChange(evt, "min")
+                                        this.handlerOnlyNumber(evt, "min")
                                     }
                                     } />
                                 </div>
                                 <div>
                                     <sup>máximo R$</sup>
                                     <input type="text" placeholder={this.state.selectedFilters.prices.max} value={this.state.selectedFilters.prices.max} onChange={(evt) => {
-                                        this.handleInputChange(evt, "max")
+                                        this.handlerOnlyNumber(evt, "max")
                                     }}
                                     />
                                 </div>
                             </div>
                         </div>
-                        <ListOfFilters title="Filtrar por marca" data={this.state.filterByBrand} selected={null} onClick={(evt) => { this.filterByBrand(evt) }} />
-                        <ListOfFilters title="Filtrar por categoria" data={this.state.filterByCategory} selected={null} onClick={(evt) => { this.filterByCategorie(evt) }} />
+                        <ListOfFilters title="Filtrar por marca" data={this.state.filterByBrand} onClick={(evt) => { this.filterByBrand(evt) }} />
+                        <ListOfFilters title="Filtrar por categoria" data={this.state.filterByCategory} onClick={(evt) => { this.filterByCategorie(evt) }} />
                     </div>
                     <div className="products">
-                        <h2>{this.state.amount} produtos encontrados</h2>
+                        <h2>{this.state.amount > 0 ? this.state.amount + " produtos encontrados" : "Nenenhum produto encontrado. Limpe os filtros e refaça sua busca" }</h2>
                         <div className="cards">
                             {this.makeProducts()}
                         </div>

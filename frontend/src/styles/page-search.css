@@ -14,11 +14,6 @@
     padding: 10px;
 }
 
-.search-page .sideBar .search-box {
-    margin: 20px 0;
-    width: auto;
-}
-
 .search-page .sideBar h4 {
     color: #c60707
 }
@@ -71,7 +66,10 @@
 
 .search-page .products {
     margin-left: 50px;
+}
 
+.search-page .products h2 {
+    text-align: center;
 }
 
 .search-page .products .cards {
@@ -79,6 +77,19 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
+}
+
+.search-page .sideBar .search-text {
+    padding: 9px 9px 9px 35px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    width: calc(100% - 44px);
+    background-image: url("../assets/images/search-icon.png");
+    background-position: 3px center;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px 0 20px 0;
 }
 
 

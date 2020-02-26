@@ -16,6 +16,7 @@ export async function productList(amount){
 export async function productListFilter(data){
     data.amount = data.amount ? data.amount : 0;
     let allFilters = '';
+    console.log(data.filters)
     for(let f in data.filters){
         if(f === "amount" || f === "shuffle" || f === "dataSearch") continue;
         if(data.filters[f] === null) continue;
@@ -24,8 +25,13 @@ export async function productListFilter(data){
             allFilters += `&price__gte=${data.filters[f].min}&price__lte=${data.filters[f].max}`; 
             continue;
         }
+        if(f === "name"){
+            allFilters += `&${f}__regex=/^${data.filters[f]}/i`;
+            continue;
+        }
         allFilters += `&${f}=${data.filters[f]}`
     }
+    console.log(allFilters)
     let ret = await axios.get(`${URL_SERVER}product?&limit=${data.amount}${allFilters}`);
 
     if(data.dataSearch){
@@ -38,8 +44,8 @@ function makeSearchResults(data){
     let brands = {};
     let categories = {};
     let prices = {
-        min: null,
-        max: null
+        min: 0,
+        max: 0
     };
     data.forEach(prod => {
         if(brands[prod.marca] === undefined){
@@ -52,7 +58,7 @@ function makeSearchResults(data){
         } else {
             categories[prod.category]++;
         }
-        if(prices.min === null){
+        if(prices.min === 0){
             prices.min = prod.price;
             prices.max = prod.price;
         }
