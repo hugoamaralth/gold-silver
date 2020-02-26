@@ -1,3 +1,7 @@
+.search-page {
+    padding: 5px 10px;
+}
+
 .search-page .content {
     display: flex;
 }
@@ -73,7 +77,41 @@
 .search-page .products .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
 }
 
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    display: none;
+}
+
+.loader.active {
+    display: flex;
+}
+
+.loader div {
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+      opacity: .2;
+    }
+}

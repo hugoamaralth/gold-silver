@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL_SERVER = 'http://localhost:3003/api/';
+const URL_SERVER = 'http://192.168.1.7:3003/api/';
 
 export async function productById(id){
     const ret = await axios.get(`${URL_SERVER}product?_id=${id}`);
@@ -13,19 +13,22 @@ export async function productList(amount){
     return shuffle(ret.data);
 }
 
-export async function productListFilter(filters){
-    filters.amount = filters.amount ? filters.amount : 0;
+export async function productListFilter(data){
+    data.amount = data.amount ? data.amount : 0;
     let allFilters = '';
-    for(let f in filters){
+    for(let f in data.filters){
         if(f === "amount" || f === "shuffle" || f === "dataSearch") continue;
-        allFilters += `&${f}=${filters[f]}`
+        if(data.filters[f] === null) continue;
+        if(f === "prices"){
+            if(data.filters[f].min === 0 || data.filters[f].max === 0) continue;
+            allFilters += `&price__gte=${data.filters[f].min}&price__lte=${data.filters[f].max}`; 
+            continue;
+        }
+        allFilters += `&${f}=${data.filters[f]}`
     }
-    let ret = await axios.get(`${URL_SERVER}product?&limit=${filters.amount}${allFilters}`);
+    let ret = await axios.get(`${URL_SERVER}product?&limit=${data.amount}${allFilters}`);
 
-    if(filters.shuffle){
-        ret.data = shuffle(ret.data);
-    }
-    if(filters.dataSearch){
+    if(data.dataSearch){
         return makeSearchResults(ret.data);
     }
     return ret.data;
@@ -37,7 +40,7 @@ function makeSearchResults(data){
     let prices = {
         min: null,
         max: null
-    }
+    };
     data.forEach(prod => {
         if(brands[prod.marca] === undefined){
             brands[prod.marca] = 1;
