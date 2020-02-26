@@ -1,7 +1,6 @@
 const restful = require('node-restful');
 const mongoose = restful.mongoose;
 
-//id: 1,
 const schema = new mongoose.Schema({
     image: {type: String, require: true},
     category: {type: String, require: true},

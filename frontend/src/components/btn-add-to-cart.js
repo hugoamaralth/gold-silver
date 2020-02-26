@@ -34,13 +34,14 @@ export default class BtnCart extends React.Component  {
     }
 
     render(){
+        let price = this.props.prod.price.toLocaleString('pt-br',{minimumFractionDigits:2});
         return (
                 <button className="btn-add-to-cart" onClick={() => { 
                     this.canClick = false;
                     this.changeText();
                 }}>
                     <span className="price">
-                        <span>R$</span>{this.props.prod.price.split(',')[0]}<span>,{this.props.prod.price.split(',')[1]}</span>
+                        <span>R$</span>{price.split(',')[0]}<span>,{price.split(',')[1]}</span>
                     </span>
                     <span>
                         {this.state.txt}

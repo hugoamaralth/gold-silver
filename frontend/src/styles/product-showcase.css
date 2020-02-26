@@ -3,7 +3,7 @@
     border: 1px solid #F0F0F0;
     border-radius: 2px;
     margin: 0 5px 10px;
-    height: 520px;
+    height: 580px;
     box-shadow: 1px 1px 6px #ccc;
     position: relative;
     max-width: 320px;
@@ -40,17 +40,32 @@
     text-align: left;
 }
 
+.item-showcase .product-description .price {
+    color: #c60707;
+    float: right;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
 .item-showcase .product-description button {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -100px;
-    bottom: 10px;
+    display: flex;
+    bottom: 20px;
     width: 200px;
+    justify-content: space-evenly;
     font-family: 'Quicksand', sans-serif;
     background-color: #007B39;
-    border:4px solid #007B39;
-    border-radius: 10px;
-    font-size: 17px;
+    border:1px solid #026d32;
+    border-radius: 7px;
+    font-size: 20px;
     text-transform: uppercase;
-    color: #c4f2d8;
+    color: #0d4c28;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.item-showcase .product-description button svg {
+    font-size: 27px;
+    color: #10bc5b;
 }

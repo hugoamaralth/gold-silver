@@ -7,7 +7,7 @@
     color:#EEE;
     position: fixed;
     width: calc(100% - 20px);
-    z-index: 2;
+    z-index: 5;
     top:0;
     transition: 0.4s;
 }
