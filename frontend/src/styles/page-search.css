@@ -4,6 +4,7 @@
 
 .search-page .sideBar {
     width: 250px;
+    min-width: 250px;
     background: #101010;
     border-radius: 3px;
     padding: 10px;
@@ -50,14 +51,27 @@
     color:#666;
     width: 49%;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .search-page .filter-by-price .price-inputs input {
-    width: 100%;
+    width: 60%;
     text-align: center;
     border: none;
     background: #EEE;
-    padding: 10px 0;
+    padding: 3px 0;
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
+    font-size: 20px;
 }
+
+.search-page .products {
+    margin-left: 50px;
+}
+
+.search-page .products .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+

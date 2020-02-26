@@ -5,11 +5,18 @@ import '../styles/page-search.css';
 import SearchBox from '../components/search-box';
 import ListOfFilters from '../components/list-of-filters';
 import { productListFilter } from '../main/server-requests';
+import ProductShowcase from '../components/product-showcase';
 
 export default class Search extends React.Component {
     state = {
         filterByBrand: [],
-        filterByCategory: []
+        filterByCategory: [],
+        prices: {
+            min: 10,
+            max: 15
+        },
+        products: [],
+        amount: 0
     };
     constructor(props) {
         super(props);
@@ -28,7 +35,13 @@ export default class Search extends React.Component {
     }
 
     makeProducts() {
-
+        let ret = [];
+        const products = this.state.products;
+        for (const prod in products) {
+            const p = products[prod];
+            ret.push(<ProductShowcase prod={p} key={p._id} handlerAddToBasket={this.handlerAddToBasket} />);
+        }
+        return ret;
     }
 
     updateStates(data) {
@@ -43,7 +56,6 @@ export default class Search extends React.Component {
                 });
             }
             let filterByCategory = [];
-            console.log(data)
             for (let b in data.categories) {
                 filterByCategory.push({
                     name: b,
@@ -52,8 +64,11 @@ export default class Search extends React.Component {
             }
             this.setState({
                 ...this.state,
+                products: data.results,
+                amount: data.amount,
                 filterByBrand,
-                filterByCategory
+                filterByCategory,
+                prices: data.prices
             });
         })
     }
@@ -72,12 +87,12 @@ export default class Search extends React.Component {
                             <h4>Filtrar por preço</h4>
                             <div className="price-inputs">
                                 <div>
-                                    <sup>mínimo</sup>
-                                    <input type="number" placeholder=" - " />
+                                    <sup>mínimo R$</sup>
+                                    <input type="number" placeholder={this.state.prices.min} min={this.state.prices.min} />
                                 </div>
                                 <div>
-                                    <sup>máximo</sup>
-                                    <input type="number" placeholder=" - " />
+                                    <sup>máximo R$</sup>
+                                    <input type="number" placeholder={this.state.prices.max} />
                                 </div>
                             </div>
                         </div>
@@ -85,7 +100,10 @@ export default class Search extends React.Component {
                         <ListOfFilters title="Filtrar por categoria" data={this.state.filterByCategory} selected={null} onClick={() => { this.filterByBrand(this) }} />
                     </div>
                     <div className="products">
-                        {this.makeProducts()}
+                        <h2>{this.state.amount} produtos encontrados</h2>
+                        <div className="cards">
+                            {this.makeProducts()}
+                        </div>
                     </div>
                 </div>
             </div>
