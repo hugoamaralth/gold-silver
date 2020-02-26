@@ -6,7 +6,7 @@ export const slidersConfig = {
     speed: 500,
     slidesToShow: 4,
     centerMode: false,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
     responsive: [
         {
