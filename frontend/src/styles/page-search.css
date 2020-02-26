@@ -67,11 +67,13 @@
 
 .search-page .products {
     margin-left: 50px;
+
 }
 
 .search-page .products .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
