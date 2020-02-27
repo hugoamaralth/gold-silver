@@ -14,3 +14,7 @@ export async function produtoPorId(id){
     return ret.data;
 };
 
+export async function saveProduct(id, pars){
+    const ret = await axios.put(`${SERVER_URL}/product/${id}`, {...pars});
+    console.log(ret);
+}

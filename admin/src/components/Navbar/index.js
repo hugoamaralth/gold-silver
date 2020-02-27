@@ -7,7 +7,7 @@ export default props =>
 <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="index.html">
-  <div className="sidebar-brand-text mx-3">GoldSilver<sup>Admin</sup></div>
+<div className="sidebar-brand-text mx-3">Gold{"&"}Silver<sup>Admin</sup></div>
 </Link>
 
 <hr className="sidebar-divider my-0" />
