@@ -1,5 +1,5 @@
 .search-box {
-    width: calc(100% - 150px);
+    /* width: calc(100% - 170px); */
     max-width: 400px;
     background: red;
     position: relative;
@@ -11,7 +11,7 @@
     border-radius: 8px;
     font-size: 14px;
     border: none;
-    width: calc(100% - 44px);
+    width: 100%;
     background-image: url("../assets/images/search-icon.png");
     background-position: 3px center;
     background-repeat: no-repeat;
@@ -28,16 +28,15 @@
 
 .search-box .search-button {
     position: absolute;
-    right: -35px;
+    cursor: pointer;
+    /* right: 0px; */
     padding: 0 15px;
+    z-index: 99999;
+    border-radius: 0 8px 8px 0;
     font-size: 15px;
     line-height: 36px;
     border:none;
     background: #ffd700;
+    font-family: 'Quicksand', sans-serif;
     color:#bf0a0a;
-    transition: .2s;
-}
-
-.search-box .search:focus + .search-button {
-    right: 0;
 }

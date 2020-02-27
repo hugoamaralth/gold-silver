@@ -10,7 +10,10 @@
 
 html , body {
     height: 100%;
+    width: 100%;
     padding-bottom: 60px;
+    overflow-x: hidden;
+    position: relative;
 }
 
 body {
@@ -43,6 +46,13 @@ button {
     cursor: pointer;
 }
 
+#app {
+    width: 100%;
+}
+.main {
+    width: 100%;
+    position: absolute;
+}
 .logo {
     cursor: pointer;
 }
@@ -64,4 +74,7 @@ button {
     .pages {
         margin-top: 122px;
     }
+    /* body, html {
+        overflow-x: hidden;
+    } */
 }

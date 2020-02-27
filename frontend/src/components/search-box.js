@@ -1,13 +1,45 @@
 import React from 'react';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
-import IconButton from '../components/icon-button';
-
+import { Redirect } from 'react-router';
 import '../styles/search-box.css';
 
-export default () => (
-    <div className="search-box">  
-        <input type="text" className="search" placeholder="O que você procura?" />
-        <IconButton cls="search-button" icon={faSearch} onClick={()=>{}} />
-    </div>
-)
+export default class SearchBox extends React.Component {
+    state = {
+        text: '',
+        go: false
+    }
+    constructor(props) {
+        super(props);
+        this.search = this.search.bind(this);
+        this.handlerOnChange = this.handlerOnChange.bind(this);
+        this.handlerKeyDown = this.handlerKeyDown.bind(this);
+    }
+    search() {
+        console.log(this.state.text)
+    }
+    handlerOnChange(evt) {
+        this.setState({
+            ...this.state,
+            text: evt.target.value
+        });
+    }
+    async handlerKeyDown(e){
+        if (e.key === 'Enter') {
+            await this.setState({
+                ...this.state,
+                go: true
+            });
+            this.setState({
+                ...this.state,
+                go: false
+            });
+        }
+      }
+    render() {
+        if(this.state.go) {
+            return <Redirect push to={`/buscar?t=${this.state.text}`} />
+        };
+        return (<div className="search-box">
+            <input type="text" className="search" placeholder="pesquisar" onKeyDown={this.handlerKeyDown} value={this.state.text} onChange={this.handlerOnChange} />
+        </div>)
+    }
+}

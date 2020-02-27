@@ -12,19 +12,24 @@ export default class Menu extends React.Component {
     constructor(props) {
         super(props);
     }
+    
     render() {
         return (
             <div className={`menu ${this.props.opened ? '' : 'closed'}`}>
                 <div className="content">
-                    <Logo />
+                    <Link to='/' onClick={this.props.openCloseMenu}>
+                        <Logo />
+                    </Link>
                     <SearchBox />
                     <ul>
                         <li>
-                            <FontAwesomeIcon icon={faHome} />
-                            Home
+                            <Link to='/' onClick={this.props.openCloseMenu}>
+                                <FontAwesomeIcon icon={faHome} />
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/buscar'>
+                            <Link to='/buscar' onClick={this.props.openCloseMenu}>
                                 <FontAwesomeIcon icon={faFilter} />
                                 Filtrar produtos
                             </Link>

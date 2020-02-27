@@ -1,6 +1,5 @@
 .header-site-mobile .top-mobile {
     display: flex;
-    justify-content: space-between;
     padding: 10px;
     align-items: center;
     background-color: #000;
@@ -18,6 +17,7 @@
 
 .header-site-mobile .logo {
     width: 130px;
+    margin-right: 15px;
 }
 
 @media (min-width: 1000px) { 

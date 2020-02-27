@@ -51,9 +51,10 @@ export default class Main extends React.Component {
             }
         );
     }
+    
     render(){
         return(
-            <div>
+            <div className="main">
                 <Header />
 
                 <div className="pages">
@@ -66,7 +67,7 @@ export default class Main extends React.Component {
 
                 <FooterMobile openCloseMenu={this.openCloseMenu} menuOpened={this.state.menuOpened} basketAmount={this.state.basket.length} />
                 <Footer />
-                <Menu opened={this.state.menuOpened} basketAmount={this.state.basket.length} />
+                <Menu opened={this.state.menuOpened} openCloseMenu={this.openCloseMenu} basketAmount={this.state.basket.length} />
                 <ScrollTop />
             </div>
             )

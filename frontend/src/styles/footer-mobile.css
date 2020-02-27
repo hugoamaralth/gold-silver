@@ -5,7 +5,7 @@
     width: 100%;
     background: #000;
     padding: 10px 0;
-    z-index: 5;
+    z-index: 6;
     display: flex;
     justify-content: space-evenly;
 }

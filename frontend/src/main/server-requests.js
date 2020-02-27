@@ -16,7 +16,6 @@ export async function productList(amount){
 export async function productListFilter(data){
     data.amount = data.amount ? data.amount : 0;
     let allFilters = '';
-    console.log(data.filters)
     for(let f in data.filters){
         if(f === "amount" || f === "shuffle" || f === "dataSearch") continue;
         if(data.filters[f] === null) continue;
@@ -31,7 +30,6 @@ export async function productListFilter(data){
         }
         allFilters += `&${f}=${data.filters[f]}`
     }
-    console.log(allFilters)
     let ret = await axios.get(`${URL_SERVER}product?&limit=${data.amount}${allFilters}`);
 
     if(data.dataSearch){

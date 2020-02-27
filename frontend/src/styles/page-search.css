@@ -4,6 +4,7 @@
 
 .search-page .content {
     display: flex;
+    flex-direction: row;
 }
 
 .search-page .sideBar {
@@ -44,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 0 20px;
+    text-align: center;
 }
 
 .search-page .filter-by-price .price-inputs > div {
@@ -61,6 +63,8 @@
     padding: 3px 0;
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
     font-size: 20px;
 }
 
@@ -68,8 +72,10 @@
     margin-left: 50px;
 }
 
-.search-page .products h2 {
-    text-align: center;
+.search-page .products .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .search-page .products .cards {
@@ -92,37 +98,42 @@
     margin: 10px 0 20px 0;
 }
 
-
-.loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .9);
-    z-index: 99;
-    top: 0;
-    left: 0;
-    color: #FFF;
-    font-size: 70px;
-    text-align: center;
-    align-items: center;
-    display: none;
-}
-
-.loader.active {
-    display: flex;
-}
-
-.loader div {
-    width: 100%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+.search-page .products .sort-select {
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    animation: blink 1s infinite;
-    -webkit-animation: blink 1s infinite;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 auto;
+    color:#101010;
+    right: 20px;
+    letter-spacing: 1px;
+}
+.search-page .products .sort-select select {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    color: #666;
+    border:1px solid #101010;
+    border-radius: 5px;
 }
 
-@keyframes blink {
-    50% {
-      opacity: .2;
+@media (max-width: 920px) { 
+    .search-page .products .header {
+        flex-direction: column;
+        height: 150px;
+        text-align: center;
+        justify-content: space-evenly;
+      
+    }
+}
+
+@media (max-width: 720px) { 
+    .search-page .content {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .search-page .sideBar {
+        width: calc(100% - 20px);
     }
 }

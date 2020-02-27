@@ -78,13 +78,13 @@
 .item-showcase .product-description button {
     margin-top: 20px;
     font-family: 'Lato', sans-serif;
-    color: #510404;
+    color: #f7c0c0;
     font-weight: bold;
     font-size: 25px;
     text-transform: uppercase;
     padding: 10px 10px 10px 20px;
     background: linear-gradient(45deg, #c60707, #840909);
-    border: 1px solid #c60707;
+    border: 1px solid #000;
     border-radius: 5px;
 }
 
