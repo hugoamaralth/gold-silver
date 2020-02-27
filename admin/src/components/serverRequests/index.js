@@ -14,7 +14,12 @@ export async function produtoPorId(id){
     return ret.data;
 };
 
-export async function saveProduct(id, pars){
+export async function updateProduct(id, pars){
     const ret = await axios.put(`${SERVER_URL}/product/${id}`, {...pars});
+    return ret;
+}
+
+export async function saveProduct(pars){
+    const ret = await axios.post(`${SERVER_URL}/product`, {...pars});
     console.log(ret);
 }

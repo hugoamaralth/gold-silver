@@ -1,6 +1,6 @@
 import React from "react";
 // import { withRouter } from "react-router";
-import { produtoPorId, saveProduct } from "../serverRequests";
+import { produtoPorId, updateProduct } from "../serverRequests";
 import Input from "../Input";
 
 export default class Edit extends React.Component {
@@ -39,7 +39,7 @@ export default class Edit extends React.Component {
             marca: this.state.produtoDetalhes.marca,
             description: this.state.produtoDetalhes.description,
         }
-        saveProduct(this.id, produtosConfig);
+        updateProduct(this.id, produtosConfig);
     }
 
     handlerOnInputChange(pars) {

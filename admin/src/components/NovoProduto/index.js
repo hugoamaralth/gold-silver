@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "../Input"
+import { saveProduct } from '../serverRequests'
 export default class NovoProduto extends React.Component {
     state = {
         produtoDetalhes: {}
@@ -27,15 +28,17 @@ export default class NovoProduto extends React.Component {
             }
         })
     }
-    salvarProduto() {
+    async salvarProduto() {
         const produtosConfig = {
             name: this.state.produtoDetalhes.name,
             price: this.state.produtoDetalhes.price,
             category: this.state.produtoDetalhes.category,
             marca: this.state.produtoDetalhes.marca,
             description: this.state.produtoDetalhes.description,
+            image: 'images/products/no-image.png'
         }
-        console.log(produtosConfig)
+        await saveProduct(produtosConfig);
+        console.log('foi')
     }
 
     render() {
