@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
-import Routes from "./Routes";
 import "./css/bootstrap/sb-admin-2.min.css";
 import "./css/fontawesome-free/css/all.min.css"
+import Navbar from "./components/Navbar";
+import Routes from "./Routes";
 
 function App() {
   return (

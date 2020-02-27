@@ -46,9 +46,6 @@ export default class ListaProdutos extends React.Component {
     }
 
 
-    //crie um componente pras linhas, criei esse básico no mesmo arquivo, mas separe ;)
-
-
     makeTable() {
 
         let {dataProdutos} = this.state;
@@ -56,8 +53,6 @@ export default class ListaProdutos extends React.Component {
         dataProdutos.map(
             (e,i)=> ret.push(<Linha name={e.name} price={e.price} _id={e._id} key={i} category={e.category}/>)
         )
-        // ret.push(<this.Linha name={i.nome} price={i.price} _id={i._id} key={i} />)
-        // ds
         return (
             <tbody id="table-body">
                 {ret}
@@ -67,14 +62,11 @@ export default class ListaProdutos extends React.Component {
     render() {
 
         return (
-            <div className="container-fluid">
-
-                <h1 className="h3 mb-2 text-gray-800">Tables</h1>
-                <p className="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a href="https://datatables.net">official DataTables documentation</a>.</p>
+            <div className="container-fluid mt-3">
 
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
-                        <h6 className="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        <h6 className="m-0 font-weight-bold text-primary">Produtos cadastrados</h6>
                     </div>
                     <div className="card-body">
                         <div className="table-responsive">
